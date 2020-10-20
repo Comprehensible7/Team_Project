@@ -1,7 +1,9 @@
 package com.scit39.teamproj;
 
 import java.io.IOException;
+
 import javax.servlet.http.HttpSession;
+
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -11,6 +13,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+
 import com.github.scribejava.core.model.OAuth2AccessToken;
 
 /**
@@ -74,6 +77,6 @@ public class LoginController {
 	public String logout(HttpSession session) throws IOException {
 		System.out.println("여기는 logout");
 		session.invalidate();
-		return "redirect:index.jsp";
+		return "redirect:/";
 	}
 }

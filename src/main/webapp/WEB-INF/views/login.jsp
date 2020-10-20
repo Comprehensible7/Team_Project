@@ -23,16 +23,13 @@
 				<form action="login.userdo" method="post" name="frm"
 					style="width: 470px;">
 					<h2>로그인</h2>
-					<input type="text" name="id" id="id" class="w3-input w3-border"
-						placeholder="아이디" value="${id}"> <br> <input
-						type="password" id="pwd" name="pwd" class="w3-input w3-border"
-						placeholder="비밀번호"> <br> <input type="submit"
-						value="로그인" onclick="#"> <br>
+					<input type="text" name="id" id="id" class="w3-input w3-border" placeholder="아이디" value="${id}"> <br> 
+					<input type="password" id="pwd" name="pwd" class="w3-input w3-border" placeholder="비밀번호"> <br> <input type="submit" value="로그인" onclick="#"> <br>
 				</form>
 				<br>
 				<!-- 네이버 로그인 창으로 이동 -->
 				<div id="naver_id_login" style="text-align: center">
-					<a href="${http://localhost:8888/login}"> <img width="223"
+					<a href="${url}"> <img width="223"
 						src="https://developers.naver.com/doc/review_201802/CK_bEFnWMeEBjXpQ5o8N_20180202_7aot50.png" /></a>
 				</div>
 				<br>
