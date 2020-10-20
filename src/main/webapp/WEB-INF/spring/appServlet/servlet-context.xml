@@ -23,19 +23,9 @@
 	
 	<context:component-scan base-package="com.scit.teamproj" />
 	
-	<!-- 로그인 인터셉터 정의 -->
-	<!-- <beans:bean id="loginInterceptor" class="com.scit.web6.util.LoginInterceptor"></beans:bean>
-	<interceptors>
-		<interceptor>
-			특정 네임스페이스 하위의 모든 경로에 대하여 다음과 같이 와일드카드 지정 가능
-			<mvc:mapping path="/board/**" />
-			<mapping path="/board/boardList" />
-			<mapping path="/board/boardWriteForm" />
-			<mapping path="/board/boardWrite" />
-			위의 경로들은 다음의 인터셉터를 경유한다.
-			<beans:ref bean="loginInterceptor" />
-		</interceptor>
-	</interceptors> -->
+	<!-- NaverLoginBO Class에 대한 Bean설정 추가 -->
+	<beans:bean id="naverLoginBO" class="com.scit39.teamproj.NaverLoginBO" />
+	
 	
 	
 	
