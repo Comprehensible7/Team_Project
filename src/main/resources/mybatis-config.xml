@@ -4,8 +4,8 @@
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<typeAliases>
-		<typeAlias type="com.scit.web6.vo.MemberVO" alias="member"/>
-		<typeAlias type="com.scit.web6.vo.BoardVO"  alias="board"/>
+		<typeAlias type="com.scit39.teamproj.vo.MemberVO" alias="member"/>
+		<typeAlias type="com.scit39.teamproj.vo.BoardVO"  alias="board"/>
 	</typeAliases>
 	<mappers>
 		<mapper resource="mapper/memberMapper.xml"/>
