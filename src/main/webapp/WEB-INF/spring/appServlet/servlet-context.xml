@@ -21,7 +21,7 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	<context:component-scan base-package="com.scit.teamproj" />
+	<context:component-scan base-package="com.scit39.teamproj" />
 	
 	<!-- NaverLoginBO Class에 대한 Bean설정 추가 -->
 	<beans:bean id="naverLoginBO" class="com.scit39.teamproj.NaverLoginBO" />
