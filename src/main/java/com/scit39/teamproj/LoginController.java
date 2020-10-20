@@ -68,9 +68,15 @@ public class LoginController {
 		System.out.println(nickname);
 		String age = (String) response_obj.get("age");
 		System.out.println(age);
+		String birthday = (String) response_obj.get("birthday");
+		System.out.println(birthday);
+		String email = (String) response_obj.get("email");
+		System.out.println(email);
 //4.파싱 닉네임 세션으로 저장
 		session.setAttribute("sessionId", nickname); // 세션 생성
 		session.setAttribute("age", age);
+		session.setAttribute("birthday", birthday);
+		session.setAttribute("email", email);
 		model.addAttribute("result", apiResult);
 		return "login";
 	}
