@@ -88,7 +88,6 @@
 					</tr>
 				</thead>
 				<tbody>
-					
 					<tr>
 						<th style="width: 100px;">名前</th>
 						<td style="width: 600px;">${map.MEMBER_NM }</td>
@@ -130,6 +129,5 @@
 				</c:if>
 				</div>
 				</div>
-				
 </body>
 </html>

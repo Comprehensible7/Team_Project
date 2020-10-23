@@ -78,7 +78,7 @@ public class LoginController {
 		session.setAttribute("birthday", birthday);
 		session.setAttribute("email", email);
 		model.addAttribute("result", apiResult);
-		return "login";
+		return "board/boardRead";
 	}
 
 //로그아웃

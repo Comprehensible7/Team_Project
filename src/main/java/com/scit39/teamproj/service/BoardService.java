@@ -25,7 +25,6 @@ public class BoardService {
 		//member_id를 추가
 		String member_id = (String)session.getAttribute("loginId");
 		board.setMember_id(member_id);
-		
 		int cnt = dao.boardWrite(board);
 		return cnt;
 	}
@@ -34,7 +33,6 @@ public class BoardService {
 		HashMap<String, Object> map = new HashMap<String, Object>();
 		map.put("searchText", searchText);
 		map.put("searchType", searchType);
-		
 		ArrayList<HashMap<String, Object>> list = dao.boardList(map, startRecode, countPerPage);
 		return list;
 	}
@@ -55,7 +53,6 @@ public class BoardService {
 	public int boardUpdate(BoardVO board) {
 		String member_id = (String) session.getAttribute("loginId");
 		board.setMember_id(member_id);
-		
 		int cnt = dao.boardUpdate(board);
 		return cnt;
 	}
@@ -79,7 +76,6 @@ public class BoardService {
 		HashMap<String, Object> map = new HashMap<String, Object>();
 		map.put("searchText", searchText);
 		map.put("searchType", searchType);
-		
 		int count = dao.boardCount(map);
 		return count;
 	}
